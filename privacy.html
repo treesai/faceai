@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Face Swap – Support & Privacy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #ffe9dd;
+      --card: #ffffff;
+      --primary: #ff7a39;
+      --primary-soft: #ffe0cf;
+      --text-main: #2d2d2d;
+      --text-muted: #666666;
+      --radius-lg: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 520px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      padding: 22px 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      margin-bottom: 18px;
+    }
+
+    .card + .card {
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin: 6px 0 4px 20px;
+      font-size: 14px;
+    }
+
+    li + li {
+      margin-top: 2px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      font-size: 11px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .highlight-box {
+      border-radius: 14px;
+      background: linear-gradient(120deg, #ffb387, #ff7a39);
+      color: #fff;
+      padding: 14px 14px 12px;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .email-box {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .email-box strong {
+      margin-right: 4px;
+    }
+
+    @media (min-width: 720px) {
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="badge">Support & Privacy</div>
+      <h1>Movie Face Swap</h1>
+      <p class="subtitle">
+        This page explains how the app works, how we handle your photos and data,
+        and how to contact us if you need help.
+      </p>
+    </header>
+
+    <!-- About -->
+    <section class="card">
+      <h2>About the App</h2>
+      <p class="tagline">
+        Discover movies and slip your own face into iconic posters and scenes.
+      </p>
+      <ul>
+        <li>Browse photos and posters from movies and TV shows.</li>
+        <li>Swap your face (or your friends’) into characters and scenes.</li>
+        <li>Edit the result with frames, filters, crop and rotate.</li>
+        <li>Save, share or revisit your previous creations anytime.</li>
+      </ul>
+      <div class="pill-list">
+        <span class="pill">Face Swap</span>
+        <span class="pill">Movie Photos</span>
+        <span class="pill">Fun Edits</span>
+      </div>
+    </section>
+
+    <!-- Privacy & Data -->
+    <section class="card">
+      <h2>Privacy & Data</h2>
+      <p>
+        We respect your privacy. The app uses your photos only for creating
+        face-swap images and related edits.
+      </p>
+      <ul>
+        <li>Your photos are chosen by you from your device or camera.</li>
+        <li>
+          Face-swap processing may be done on-device or securely on our servers,
+          only to generate your result image.
+        </li>
+        <li>
+          We do not use your personal photos to train public AI models or sell
+          them to third parties.
+        </li>
+        <li>
+          You can delete your creations from within the app at any time. If
+          removed, they are no longer visible in the app.
+        </li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Important:</strong> If you share a face-swap image to social
+        media or messaging apps, that image is then handled under those
+        services’ own privacy policies.
+      </div>
+    </section>
+
+    <!-- Content & Copyright -->
+    <section class="card">
+      <h2>Movie Content & Copyright</h2>
+      <p>
+        Movie posters and stills shown in the app are used only to help you
+        discover films and create personal face-swap images.
+      </p>
+      <ul>
+        <li>
+          The app does <strong>not</strong> stream or provide full-length movies.
+        </li>
+        <li>
+          All movie titles, posters, characters and related artwork are the
+          property of their respective owners and rights holders.
+        </li>
+        <li>
+          This app is a fan tool for creative photo edits and does not claim any
+          ownership over movie content.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Analytics & Ads -->
+    <section class="grid-2">
+      <div class="card">
+        <h2>Analytics & Usage</h2>
+        <p>
+          To keep improving the app, we may collect limited anonymous usage
+          data, such as:
+        </p>
+        <ul>
+          <li>Which features are used most often.</li>
+          <li>Basic device and app version information.</li>
+          <li>Crash reports to fix bugs and improve stability.</li>
+        </ul>
+        <p>
+          This data is used only to understand overall trends and enhance user
+          experience, not to personally identify you.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Advertising</h2>
+        <p>
+          The app may show ads to keep the service free. Advertising partners
+          may use anonymous identifiers to show relevant ads, following their
+          own privacy policies.
+        </p>
+        <p>
+          On iOS, if we use tracking for ads, the system will ask for your
+          permission first via the standard App Tracking Transparency prompt.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="card">
+      <h2>Contact & Support</h2>
+      <p>
+        If you have any questions about the app, your data, or want your
+        information removed, please contact us:
+      </p>
+      <div class="email-box">
+        <strong>Email:</strong> <span>thuminhnguyen1308@icloud.com</span>
+      </div>
+      <p style="margin-top:8px;font-size:13px;">
+        When you write to us, you may include screenshots or your device model
+        and app version so we can help more quickly.
+      </p>
+    </section>
+
+    <footer>
+      <p>Movie Face Swap – Support & Privacy Page</p>
+      <p>Last updated: 03 December 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
